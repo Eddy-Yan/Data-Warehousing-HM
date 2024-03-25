@@ -3,21 +3,18 @@
 	<schema name="INSTANCE" catalogname="ElectricVehiclePopulation_dw_lgl" >
 		<table name="dim_CAFV_eligibility" prior="dim_CAFV_eligibility_id" >
 			<column name="CAFV_eligibility_id" type="INT" jt="4" mandatory="y" />
-			<column name="CAFV_eligibility_type" type="VARCHAR" length="255" jt="12" />
 			<index name="pk_dim_CAFV_eligibility" unique="PRIMARY_KEY" >
 				<column name="CAFV_eligibility_id" />
 			</index>
 		</table>
 		<table name="dim_electric_utility" prior="dim_electric_tuility" >
 			<column name="electric_utility_id" type="INT" jt="4" mandatory="y" />
-			<column name="electric_utility_type" type="VARCHAR" length="255" jt="12" />
 			<index name="pk_dim_electric_utility" unique="PRIMARY_KEY" >
 				<column name="electric_utility_id" />
 			</index>
 		</table>
 		<table name="dim_electric_vehicle_type" prior="dim_vehicle_type" >
 			<column name="electric_vehicle_type_id" prior="vehicle_type_id" type="INT" jt="4" mandatory="y" />
-			<column name="electric_vehicle_type" type="VARCHAR" length="255" jt="12" />
 			<index name="pk_dim_vehicle_type" unique="PRIMARY_KEY" >
 				<column name="electric_vehicle_type_id" />
 			</index>
@@ -47,41 +44,47 @@
 			<column name="base_MSRP" type="INT" jt="4" />
 			<column name="location_id" type="INT" jt="4" mandatory="y" />
 			<column name="VIN" prior="vehicle_id" type="INT" jt="4" mandatory="y" />
-			<column name="electric_vehicle_type_id" prior="vehicle_type_id" type="INT" jt="4" mandatory="y" />
-			<column name="CAFV_eligibiliby_id" type="INT" jt="4" mandatory="y" />
-			<column name="electric_utility_id" type="INT" jt="4" mandatory="y" />
+			<column name="electric_vehicle_type_id" prior="vehicle_type_id" type="INT" jt="4" />
+			<column name="CAFV_eligibiliby_id" type="INT" jt="4" />
+			<column name="electric_utility_id" type="INT" jt="4" />
+			<index name="unq_electric_vehicle_type_id" unique="UNIQUE_INDEX" >
+				<column name="electric_vehicle_type_id" />
+			</index>
+			<index name="unq_CAFV_eligibiliby_id" unique="UNIQUE_INDEX" >
+				<column name="CAFV_eligibiliby_id" />
+			</index>
+			<index name="unq_electric_utility_id" unique="UNIQUE_INDEX" >
+				<column name="electric_utility_id" />
+			</index>
 			<index name="pk_facts_vehicles" unique="PRIMARY_KEY" >
 				<column name="fact_id" />
 				<column name="location_id" />
 				<column name="VIN" />
-				<column name="electric_vehicle_type_id" />
-				<column name="CAFV_eligibiliby_id" />
-				<column name="electric_utility_id" />
 			</index>
+			<fk name="fk_facts_vehicles_dim_CAFV_eligibility" virtual="y" to_schema="ElectricVehiclePopulation_dw_lgl.INSTANCE" to_table="dim_CAFV_eligibility" type="NonIdentifying" mandatory="n" cardinality="OneMore" range_from="0" range_to="0" >
+				<fk_column name="CAFV_eligibiliby_id" pk="CAFV_eligibility_id" />
+			</fk>
+			<fk name="fk_facts_vehicles_dim_electric_utility" virtual="y" to_schema="ElectricVehiclePopulation_dw_lgl.INSTANCE" to_table="dim_electric_utility" type="NonIdentifying" mandatory="n" cardinality="OneMore" range_from="0" range_to="0" >
+				<fk_column name="electric_utility_id" pk="electric_utility_id" />
+			</fk>
+			<fk name="fk_facts_vehicles_dim_electric_vehicle_type" virtual="y" to_schema="ElectricVehiclePopulation_dw_lgl.INSTANCE" to_table="dim_electric_vehicle_type" type="NonIdentifying" mandatory="n" cardinality="OneMore" range_from="0" range_to="0" >
+				<fk_column name="electric_vehicle_type_id" pk="electric_vehicle_type_id" />
+			</fk>
 			<fk name="fk_facts_vehicles_dim_location" virtual="y" to_schema="ElectricVehiclePopulation_dw_lgl.INSTANCE" to_table="dim_location" type="Identifying" mandatory="y" cardinality="ZeroMore" range_from="0" range_to="0" >
 				<fk_column name="location_id" pk="location_id" />
 			</fk>
 			<fk name="fk_facts_vehicles_dim_vehicle" virtual="y" to_schema="ElectricVehiclePopulation_dw_lgl.INSTANCE" to_table="dim_vehicle" type="Identifying" mandatory="y" cardinality="ZeroMore" range_from="0" range_to="0" >
 				<fk_column name="VIN" pk="VIN" />
 			</fk>
-			<fk name="fk_facts_vehicles_dim_electric_vehicle_type" virtual="y" to_schema="ElectricVehiclePopulation_dw_lgl.INSTANCE" to_table="dim_electric_vehicle_type" type="Identifying" mandatory="y" cardinality="ZeroMore" range_from="0" range_to="0" >
-				<fk_column name="electric_vehicle_type_id" pk="electric_vehicle_type_id" />
-			</fk>
-			<fk name="fk_facts_vehicles_dim_CAFV_eligibility" virtual="y" to_schema="ElectricVehiclePopulation_dw_lgl.INSTANCE" to_table="dim_CAFV_eligibility" type="Identifying" mandatory="y" cardinality="ZeroMore" range_from="0" range_to="0" >
-				<fk_column name="CAFV_eligibiliby_id" pk="CAFV_eligibility_id" />
-			</fk>
-			<fk name="fk_facts_vehicles_dim_electric_utility" virtual="y" to_schema="ElectricVehiclePopulation_dw_lgl.INSTANCE" to_table="dim_electric_utility" type="Identifying" mandatory="y" cardinality="ZeroMore" range_from="0" range_to="0" >
-				<fk_column name="electric_utility_id" pk="electric_utility_id" />
-			</fk>
 		</table>
 	</schema>
 	<layout name="Default Layout" id="Layout-1bad" show_relation="columns" >
-		<entity schema="ElectricVehiclePopulation_dw_lgl.INSTANCE" name="dim_CAFV_eligibility" color="C1D8EE" x="765" y="680" />
-		<entity schema="ElectricVehiclePopulation_dw_lgl.INSTANCE" name="dim_electric_utility" color="C1D8EE" x="1071" y="629" />
-		<entity schema="ElectricVehiclePopulation_dw_lgl.INSTANCE" name="dim_electric_vehicle_type" color="C1D8EE" x="323" y="646" />
-		<entity schema="ElectricVehiclePopulation_dw_lgl.INSTANCE" name="dim_location" color="C1D8EE" x="986" y="374" />
-		<entity schema="ElectricVehiclePopulation_dw_lgl.INSTANCE" name="dim_vehicle" color="C1D8EE" x="272" y="391" />
-		<entity schema="ElectricVehiclePopulation_dw_lgl.INSTANCE" name="facts_vehicles" color="C1D8EE" x="578" y="340" />
+		<entity schema="ElectricVehiclePopulation_dw_lgl.INSTANCE" name="dim_CAFV_eligibility" color="C1D8EE" x="1037" y="493" />
+		<entity schema="ElectricVehiclePopulation_dw_lgl.INSTANCE" name="dim_electric_utility" color="C1D8EE" x="935" y="561" />
+		<entity schema="ElectricVehiclePopulation_dw_lgl.INSTANCE" name="dim_electric_vehicle_type" color="C1D8EE" x="68" y="442" />
+		<entity schema="ElectricVehiclePopulation_dw_lgl.INSTANCE" name="dim_location" color="C1D8EE" x="1020" y="204" />
+		<entity schema="ElectricVehiclePopulation_dw_lgl.INSTANCE" name="dim_vehicle" color="C1D8EE" x="170" y="272" />
+		<entity schema="ElectricVehiclePopulation_dw_lgl.INSTANCE" name="facts_vehicles" color="C1D8EE" x="527" y="340" />
 		<callout x="51" y="51" pointer="Round" >
 			<comment><![CDATA[This is a layout - a diagram with tools.
 - Create new entities by right-clicking the layout. 
