@@ -22,7 +22,7 @@ CREATE  TABLE "electricvehicle".dim_location (
  );
 
 CREATE  TABLE "electricvehicle".dim_vehicle ( 
-	vin                  integer  NOT NULL  ,
+	vin                  varchar(255)  NOT NULL  ,
 	make                 varchar(255)    ,
 	model                varchar(25)    ,
 	model_year           integer    ,
@@ -34,7 +34,7 @@ CREATE  TABLE "electricvehicle".facts_vehicles (
 	electric_range       integer    ,
 	base_msrp            integer    ,
 	location_id          integer  NOT NULL  ,
-	vin                  integer  NOT NULL  ,
+	vin                  varchar(255)  NOT NULL  ,
 	electric_vehicle_type_id integer  NOT NULL  ,
 	cafv_eligibiliby_type_id integer    ,
 	CONSTRAINT pk_facts_vehicles PRIMARY KEY ( fact_id )
