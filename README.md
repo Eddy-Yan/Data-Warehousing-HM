@@ -8,3 +8,5 @@ the official Washington state open data portal
 
 Last UpdatedApril 18, 2024 
 Data Provided ByWashington State Department of Licensing https://data.wa.gov/Transportation/Electric-Vehicle-Population-Data/f6w7-q2d2/about_data
+
+Data Dictionary: https://docs.google.com/spreadsheets/d/1MaLs3SEwljr5OxfeX5lB5G9PYb8aAFTRiHfkR2HYiWo/edit#gid=0
