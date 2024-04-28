@@ -1,149 +1,131 @@
 <?xml version="1.0" encoding="UTF-8" ?>
-<project name="ElectricVehiclePopulation_dw_lgl" id="GoogleBigQuery-1cc" database="GoogleBigQuery" >
-	<schema name="INSTANCE" catalogname="ElectricVehiclePopulation_dw_lgl" >
-		<table name="dim_CAFV_eligibility" >
-			<column name="CAFV_eligibility_id" type="int64" jt="4" mandatory="y" />
-			<index name="pk_dim_CAFV_eligibility" unique="PRIMARY_KEY" >
-				<column name="CAFV_eligibility_id" />
-			</index>
-		</table>
-		<table name="dim_electric_utility" >
-			<column name="electric_utility_id" type="int64" jt="4" mandatory="y" />
-			<index name="pk_dim_electric_utility" unique="PRIMARY_KEY" >
-				<column name="electric_utility_id" />
+<project name="ElectricVehiclePopulation_dw_lgl" id="PostgreSQL-9f8" database="PostgreSQL" >
+	<schema name="instance" catalogname="ElectricVehiclePopulation_dw_lgl" >
+		<table name="dim_cafv_eligibility_type" prior="dim_CAFV_eligibility_type" >
+			<column name="cafv_eligibility_type_id" prior="CAFV_eligibility_type_id" type="integer" jt="4" mandatory="y" />
+			<column name="cafv_eligibility_type" prior="CAFV_eligibility_type" type="varchar" length="255" jt="12" />
+			<index name="pk_dim_cafv_eligibility" unique="PRIMARY_KEY" >
+				<column name="cafv_eligibility_type_id" />
 			</index>
 		</table>
 		<table name="dim_electric_vehicle_type" >
-			<column name="electric_vehicle_type_id" type="int64" jt="4" mandatory="y" />
+			<column name="electric_vehicle_type_id" type="integer" jt="4" mandatory="y" />
+			<column name="electric_vehicle_type" type="varchar" length="255" jt="12" />
 			<index name="pk_dim_vehicle_type" unique="PRIMARY_KEY" >
 				<column name="electric_vehicle_type_id" />
 			</index>
 		</table>
 		<table name="dim_location" >
-			<column name="location_id" type="int64" jt="4" mandatory="y" />
-			<column name="state" type="string" length="255" jt="12" />
-			<column name="county" type="string" length="255" jt="12" />
-			<column name="city" type="string" length="255" jt="12" />
-			<column name="postal_code" type="string" length="255" jt="12" />
+			<column name="location_id" type="integer" jt="4" mandatory="y" />
+			<column name="county" type="varchar" length="255" jt="12" />
+			<column name="city" type="varchar" length="255" jt="12" />
+			<column name="state" type="varchar" length="255" jt="12" />
+			<column name="zip_code" type="varchar" length="255" jt="12" />
 			<index name="pk_dim_location" unique="PRIMARY_KEY" >
 				<column name="location_id" />
 			</index>
 		</table>
 		<table name="dim_vehicle" >
-			<column name="VIN" type="string" length="255" jt="12" mandatory="y" />
-			<column name="make" type="string" length="255" jt="12" />
-			<column name="model" type="string" length="25" jt="12" />
-			<column name="model_year" type="int64" jt="4" />
+			<column name="vin" prior="VIN" type="integer" jt="4" mandatory="y" />
+			<column name="make" type="varchar" length="255" jt="12" />
+			<column name="model" type="varchar" length="25" jt="12" />
+			<column name="model_year" type="integer" jt="4" />
 			<index name="pk_dim_vehicle" unique="PRIMARY_KEY" >
-				<column name="VIN" />
+				<column name="vin" />
 			</index>
 		</table>
 		<table name="facts_vehicles" >
-			<column name="fact_id" type="int64" jt="4" mandatory="y" />
-			<column name="electric_range" type="int64" jt="4" />
-			<column name="base_MSRP" type="int64" jt="4" />
-			<column name="location_id" type="int64" jt="4" mandatory="y" />
-			<column name="VIN" type="int64" jt="4" mandatory="y" />
-			<column name="electric_vehicle_type_id" type="int64" jt="4" />
-			<column name="CAFV_eligibiliby_id" type="int64" jt="4" />
-			<column name="electric_utility_id" type="int64" jt="4" />
+			<column name="fact_id" type="bigint" jt="-5" mandatory="y" />
+			<column name="electric_range" type="integer" jt="4" />
+			<column name="base_msrp" prior="base_MSRP" type="integer" jt="4" />
+			<column name="location_id" type="integer" jt="4" mandatory="y" />
+			<column name="vin" prior="VIN" type="integer" jt="4" mandatory="y" />
+			<column name="electric_vehicle_type_id" type="integer" jt="4" mandatory="y" />
+			<column name="cafv_eligibiliby_type_id" prior="CAFV_eligibiliby_type_id" type="integer" jt="4" />
 			<index name="unq_electric_vehicle_type_id" unique="UNIQUE_INDEX" >
 				<column name="electric_vehicle_type_id" />
 			</index>
-			<index name="unq_CAFV_eligibiliby_id" unique="UNIQUE_INDEX" >
-				<column name="CAFV_eligibiliby_id" />
-			</index>
-			<index name="unq_electric_utility_id" unique="UNIQUE_INDEX" >
-				<column name="electric_utility_id" />
+			<index name="unq_cafv_eligibiliby_id" unique="UNIQUE_INDEX" >
+				<column name="cafv_eligibiliby_type_id" />
 			</index>
 			<index name="pk_facts_vehicles" unique="PRIMARY_KEY" >
 				<column name="fact_id" />
 				<column name="location_id" />
-				<column name="VIN" />
+				<column name="vin" />
 			</index>
-			<fk name="fk_facts_vehicles_dim_CAFV_eligibility" virtual="y" to_schema="ElectricVehiclePopulation_dw_lgl.INSTANCE" to_table="dim_CAFV_eligibility" >
-				<fk_column name="CAFV_eligibiliby_id" pk="CAFV_eligibility_id" />
+			<fk name="fk_facts_vehicles_dim_cafv_eligibility" virtual="y" to_schema="ElectricVehiclePopulation_dw_lgl.instance" to_table="dim_cafv_eligibility_type" >
+				<fk_column name="cafv_eligibiliby_type_id" pk="cafv_eligibility_type_id" />
 			</fk>
-			<fk name="fk_facts_vehicles_dim_electric_utility" virtual="y" to_schema="ElectricVehiclePopulation_dw_lgl.INSTANCE" to_table="dim_electric_utility" >
-				<fk_column name="electric_utility_id" pk="electric_utility_id" />
-			</fk>
-			<fk name="fk_facts_vehicles_dim_electric_vehicle_type" virtual="y" to_schema="ElectricVehiclePopulation_dw_lgl.INSTANCE" to_table="dim_electric_vehicle_type" >
+			<fk name="fk_facts_vehicles_dim_electric_vehicle_type" virtual="y" to_schema="ElectricVehiclePopulation_dw_lgl.instance" to_table="dim_electric_vehicle_type" >
 				<fk_column name="electric_vehicle_type_id" pk="electric_vehicle_type_id" />
 			</fk>
-			<fk name="fk_facts_vehicles_dim_location" virtual="y" to_schema="ElectricVehiclePopulation_dw_lgl.INSTANCE" to_table="dim_location" >
+			<fk name="fk_facts_vehicles_dim_location" virtual="y" to_schema="ElectricVehiclePopulation_dw_lgl.instance" to_table="dim_location" >
 				<fk_column name="location_id" pk="location_id" />
 			</fk>
-			<fk name="fk_facts_vehicles_dim_vehicle" virtual="y" to_schema="ElectricVehiclePopulation_dw_lgl.INSTANCE" to_table="dim_vehicle" >
-				<fk_column name="VIN" pk="VIN" />
+			<fk name="fk_facts_vehicles_dim_vehicle" virtual="y" to_schema="ElectricVehiclePopulation_dw_lgl.instance" to_table="dim_vehicle" >
+				<fk_column name="vin" pk="vin" />
 			</fk>
 		</table>
 	</schema>
-	<layout name="Default Layout" id="Layout-a1c" confirmed="y" show_relation="columns" >
-		<entity schema="ElectricVehiclePopulation_dw_lgl.INSTANCE" name="dim_CAFV_eligibility" color="C1D8EE" x="1037" y="493" />
-		<entity schema="ElectricVehiclePopulation_dw_lgl.INSTANCE" name="dim_electric_utility" color="C1D8EE" x="935" y="561" />
-		<entity schema="ElectricVehiclePopulation_dw_lgl.INSTANCE" name="dim_electric_vehicle_type" color="C1D8EE" x="68" y="442" />
-		<entity schema="ElectricVehiclePopulation_dw_lgl.INSTANCE" name="dim_location" color="C1D8EE" x="1020" y="204" />
-		<entity schema="ElectricVehiclePopulation_dw_lgl.INSTANCE" name="dim_vehicle" color="C1D8EE" x="170" y="272" />
-		<entity schema="ElectricVehiclePopulation_dw_lgl.INSTANCE" name="facts_vehicles" color="C1D8EE" x="527" y="340" />
-		<callout x="51" y="51" pointer="Round" >
+	<layout name="Default Layout" id="Layout-6bf" confirmed="y" show_relation="columns" >
+		<entity schema="ElectricVehiclePopulation_dw_lgl.instance" name="dim_cafv_eligibility_type" color="C1D8EE" x="944" y="464" />
+		<entity schema="ElectricVehiclePopulation_dw_lgl.instance" name="dim_electric_vehicle_type" color="C1D8EE" x="64" y="448" />
+		<entity schema="ElectricVehiclePopulation_dw_lgl.instance" name="dim_location" color="C1D8EE" x="1024" y="208" />
+		<entity schema="ElectricVehiclePopulation_dw_lgl.instance" name="dim_vehicle" color="C1D8EE" x="176" y="272" />
+		<entity schema="ElectricVehiclePopulation_dw_lgl.instance" name="facts_vehicles" color="C1D8EE" x="528" y="336" />
+		<callout x="48" y="48" pointer="Round" >
 			<comment><![CDATA[This is a layout - a diagram with tools.
 - Create new entities by right-clicking the layout. 
 - Double-click entity headers to edit.
 - For a better understanding of the schema, create multiple layouts.
 - Deploy the model into the database by converting it first to the physical design.]]></comment>
 		</callout>
-		<script name="SQL_Editor" id="Editor-2204" language="SQL" >
-			<string><![CDATA[CREATE SCHEMA INSTANCE;
+		<script name="SQL_Editor" id="Editor-202b" language="SQL" >
+			<string><![CDATA[CREATE SCHEMA IF NOT EXISTS "electricvehicle";
 
-CREATE TABLE ElectricVehiclePopulation_dw_lgl.INSTANCE.dim_CAFV_eligibility ( 
-	CAFV_eligibility_id int64 NOT NULL  
+CREATE  TABLE "electricvehicle".dim_cafv_eligibility_type ( 
+	cafv_eligibility_type_id integer  NOT NULL  ,
+	cafv_eligibility_type varchar(255)    ,
+	CONSTRAINT pk_dim_cafv_eligibility PRIMARY KEY ( cafv_eligibility_type_id )
  );
 
-ALTER TABLE ElectricVehiclePopulation_dw_lgl.INSTANCE.dim_CAFV_eligibility ADD PRIMARY KEY ( CAFV_eligibility_id )  NOT ENFORCED;
-
-CREATE TABLE ElectricVehiclePopulation_dw_lgl.INSTANCE.dim_electric_utility ( 
-	electric_utility_id int64 NOT NULL  
+CREATE  TABLE "electricvehicle".dim_electric_vehicle_type ( 
+	electric_vehicle_type_id integer  NOT NULL  ,
+	electric_vehicle_type varchar(255)    ,
+	CONSTRAINT pk_dim_vehicle_type PRIMARY KEY ( electric_vehicle_type_id )
  );
 
-ALTER TABLE ElectricVehiclePopulation_dw_lgl.INSTANCE.dim_electric_utility ADD PRIMARY KEY ( electric_utility_id )  NOT ENFORCED;
-
-CREATE TABLE ElectricVehiclePopulation_dw_lgl.INSTANCE.dim_electric_vehicle_type ( 
-	electric_vehicle_type_id int64 NOT NULL  
+CREATE  TABLE "electricvehicle".dim_location ( 
+	location_id          integer  NOT NULL  ,
+	county               varchar(255)    ,
+	city                 varchar(255)    ,
+	"state"              varchar(255)    ,
+	zip_code             varchar(255)    ,
+	CONSTRAINT pk_dim_location PRIMARY KEY ( location_id )
  );
 
-ALTER TABLE ElectricVehiclePopulation_dw_lgl.INSTANCE.dim_electric_vehicle_type ADD PRIMARY KEY ( electric_vehicle_type_id )  NOT ENFORCED;
-
-CREATE TABLE ElectricVehiclePopulation_dw_lgl.INSTANCE.dim_location ( 
-	location_id int64 NOT NULL  ,
-	state string  ,
-	county string  ,
-	city string  ,
-	postal_code string  
+CREATE  TABLE "electricvehicle".dim_vehicle ( 
+	vin                  integer  NOT NULL  ,
+	make                 varchar(255)    ,
+	model                varchar(25)    ,
+	model_year           integer    ,
+	CONSTRAINT pk_dim_vehicle PRIMARY KEY ( vin )
  );
 
-ALTER TABLE ElectricVehiclePopulation_dw_lgl.INSTANCE.dim_location ADD PRIMARY KEY ( location_id )  NOT ENFORCED;
-
-CREATE TABLE ElectricVehiclePopulation_dw_lgl.INSTANCE.dim_vehicle ( 
-	VIN string NOT NULL  ,
-	make string  ,
-	model string  ,
-	model_year int64  
+CREATE  TABLE "electricvehicle".facts_vehicles ( 
+	fact_id              bigint  NOT NULL  ,
+	electric_range       integer    ,
+	base_msrp            integer    ,
+	location_id          integer  NOT NULL  ,
+	vin                  integer  NOT NULL  ,
+	electric_vehicle_type_id integer  NOT NULL  ,
+	cafv_eligibiliby_type_id integer    ,
+	CONSTRAINT pk_facts_vehicles PRIMARY KEY ( fact_id, location_id, vin )
  );
 
-ALTER TABLE ElectricVehiclePopulation_dw_lgl.INSTANCE.dim_vehicle ADD PRIMARY KEY ( VIN )  NOT ENFORCED;
+CREATE UNIQUE INDEX unq_electric_vehicle_type_id ON "electricvehicle".facts_vehicles ( electric_vehicle_type_id );
 
-CREATE TABLE ElectricVehiclePopulation_dw_lgl.INSTANCE.facts_vehicles ( 
-	fact_id int64 NOT NULL  ,
-	electric_range int64  ,
-	base_MSRP int64  ,
-	location_id int64 NOT NULL  ,
-	VIN int64 NOT NULL  ,
-	electric_vehicle_type_id int64  ,
-	CAFV_eligibiliby_id int64  ,
-	electric_utility_id int64  
- );
-
-ALTER TABLE ElectricVehiclePopulation_dw_lgl.INSTANCE.facts_vehicles ADD PRIMARY KEY ( fact_id, location_id, VIN )  NOT ENFORCED;
+CREATE UNIQUE INDEX unq_cafv_eligibiliby_id ON "electricvehicle".facts_vehicles ( cafv_eligibiliby_type_id );
 ]]></string>
 		</script>
 	</layout>
