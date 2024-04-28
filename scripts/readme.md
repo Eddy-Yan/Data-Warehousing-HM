@@ -1,0 +1,1 @@
+This page contains scripts for gathering data, storing it in Azure storage, creating the Data Warehouse, performing ETL transformations, pushing data to the Data Warehouse, and generating data in CSV format, among other functions.
