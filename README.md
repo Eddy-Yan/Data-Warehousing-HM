@@ -19,3 +19,4 @@ lookup Table: https://docs.google.com/spreadsheets/d/1DQV8-QHp_cAUMDXqv3T2hcDele
 ![model3](https://github.com/Eddy-Yan/Data-Warehousing-HM/assets/123831422/e36e3372-8cdd-4129-8759-56a1ce5e18df)
 
 # Tableau Link
+https://public.tableau.com/views/ElectricVehicle_17143337878310/ElectricVehicle?:language=en-US&publish=yes&:sid=&:display_count=n&:origin=viz_share_link
