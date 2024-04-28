@@ -1,0 +1,4 @@
+CAFV_eligibility_type_id,CAFV_eligibility_type
+1,Clean Alternative Fuel Vehicle Eligible
+2,Eligibility unknown as battery range has not been researched
+3,Not eligible due to low battery range

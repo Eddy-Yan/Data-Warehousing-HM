@@ -1,0 +1,793 @@
+location_id,county,city,state,zip_code
+1,King,Seattle,WA,98126
+2,Thurston,Olympia,WA,98502
+3,Thurston,Lacey,WA,98516
+4,Thurston,Tenino,WA,98589
+5,Yakima,Yakima,WA,98902
+6,Thurston,Olympia,WA,98501
+7,Kitsap,Keyport,WA,98345
+8,Snohomish,Mountlake Terrace,WA,98043
+9,King,Seattle,WA,98119
+10,Snohomish,Bothell,WA,98021
+11,King,Seattle,WA,98121
+12,Kitsap,Port Orchard,WA,98366
+13,Kitsap,Port Orchard,WA,98367
+14,Kitsap,Bremerton,WA,98310
+15,Yakima,Moxee,WA,98936
+16,Snohomish,Woodinville,WA,98077
+17,Thurston,Olympia,WA,98512
+18,Thurston,Olympia,WA,98506
+19,Yakima,Yakima,WA,98908
+20,Kitsap,Poulsbo,WA,98370
+21,Island,Oak Harbor,WA,98277
+22,Snohomish,Bothell,WA,98012
+23,King,Seattle,WA,98105
+24,King,Seattle,WA,98122
+25,Snohomish,Lynnwood,WA,98036
+26,Yakima,Selah,WA,98942
+27,Snohomish,Everett,WA,98203
+28,Kitsap,Bremerton,WA,98312
+29,Thurston,Olympia,WA,98516
+30,Kitsap,Bainbridge Island,WA,98110
+31,King,Seattle,WA,98117
+32,King,Seattle,WA,98103
+33,Snohomish,Arlington,WA,98223
+34,Snohomish,Edmonds,WA,98026
+35,Skagit,Mount Vernon,WA,98273
+36,Snohomish,Everett,WA,98204
+37,Chelan,Leavenworth,WA,98826
+38,King,Renton,WA,98059
+39,Kitsap,Silverdale,WA,98383
+40,King,Seattle,WA,98199
+41,Kittitas,Easton,WA,98925
+42,Whitman,Pullman,WA,99163
+43,King,Redmond,WA,98052
+44,Snohomish,Everett,WA,98208
+45,Snohomish,Mill Creek,WA,98012
+46,King,Seattle,WA,98101
+47,Snohomish,Stanwood,WA,98292
+48,Snohomish,Lynnwood,WA,98037
+49,Skagit,Anacortes,WA,98221
+50,Yakima,Yakima,WA,98903
+51,King,Seattle,WA,98106
+52,Snohomish,Monroe,WA,98272
+53,Okanogan,Winthrop,WA,98862
+54,Thurston,Olympia,WA,98503
+55,King,Enumclaw,WA,98022
+56,Yakima,Yakima,WA,98901
+57,Island,Greenbank,WA,98253
+58,Thurston,Olympia,WA,98513
+59,Walla Walla,Walla Walla,WA,99362
+60,Island,Langley,WA,98260
+61,King,Seattle,WA,98133
+62,King,Bellevue,WA,98004
+63,King,Seattle,WA,98125
+64,Clark,Battle Ground,WA,98604
+65,King,Kirkland,WA,98034
+66,Clark,Vancouver,WA,98662
+67,King,Bellevue,WA,98008
+68,King,Bothell,WA,98011
+69,King,Shoreline,WA,98133
+70,King,Bellevue,WA,98006
+71,King,Renton,WA,98056
+72,King,Issaquah,WA,98029
+73,King,Federal Way,WA,98003
+74,King,Renton,WA,98055
+75,Cowlitz,Kelso,WA,98626
+76,King,Burien,WA,98168
+77,King,Sammamish,WA,98075
+78,King,Bellevue,WA,98007
+79,Kitsap,Bremerton,WA,98311
+80,King,Seattle,WA,98109
+81,King,Shoreline,WA,98177
+82,King,Kent,WA,98030
+83,King,Kirkland,WA,98033
+84,King,Seattle,WA,98104
+85,King,Auburn,WA,98092
+86,Clark,Camas,WA,98607
+87,King,Kent,WA,98031
+88,King,Bellevue,WA,98005
+89,King,Sammamish,WA,98074
+90,King,Tukwila,WA,98188
+91,King,Seattle,WA,98177
+92,King,Newcastle,WA,98059
+93,Clark,Vancouver,WA,98683
+94,Snohomish,Snohomish,WA,98290
+95,King,Issaquah,WA,98027
+96,Snohomish,Lynnwood,WA,98087
+97,King,Seattle,WA,98144
+98,King,Seattle,WA,98112
+99,Clark,Vancouver,WA,98685
+100,Snohomish,Snohomish,WA,98296
+101,King,Seatac,WA,98198
+102,King,Woodinville,WA,98072
+103,King,Seatac,WA,98188
+104,Clark,Vancouver,WA,98686
+105,King,Covington,WA,98042
+106,King,Burien,WA,98166
+107,King,Newcastle,WA,98056
+108,Jefferson,Port Townsend,WA,98368
+109,Thurston,Tumwater,WA,98512
+110,King,Renton,WA,98058
+111,King,Shoreline,WA,98155
+112,Clark,Vancouver,WA,98682
+113,King,Seattle,WA,98146
+114,Stevens,Nine Mile Falls,WA,99026
+115,King,Federal Way,WA,98023
+116,King,Des Moines,WA,98198
+117,King,Kenmore,WA,98028
+118,Snohomish,Everett,WA,98201
+119,Clark,Washougal,WA,98671
+120,Clark,La Center,WA,98629
+121,King,Auburn,WA,98002
+122,Clark,Vancouver,WA,98664
+123,Clark,Ridgefield,WA,98642
+124,King,Burien,WA,98146
+125,Thurston,Yelm,WA,98597
+126,King,Seattle,WA,98178
+127,King,Seattle,WA,98116
+128,Kitsap,Kingston,WA,98346
+129,King,Lake Forest Park,WA,98155
+130,Snohomish,Marysville,WA,98271
+131,Kitsap,Seabeck,WA,98380
+132,King,Des Moines,WA,98148
+133,King,Tukwila,WA,98178
+134,Island,Coupeville,WA,98239
+135,Cowlitz,Woodland,WA,98674
+136,Snohomish,Mukilteo,WA,98275
+137,Clark,Vancouver,WA,98684
+138,Clark,Brush Prairie,WA,98606
+139,Snohomish,Edmonds,WA,98020
+140,King,Kent,WA,98042
+141,Clark,Vancouver,WA,98660
+142,King,Burien,WA,98148
+143,Cowlitz,Longview,WA,98632
+144,King,Tukwila,WA,98168
+145,King,Renton,WA,98057
+146,King,North Bend,WA,98045
+147,Clark,Vancouver,WA,98665
+148,King,Duvall,WA,98019
+149,King,Medina,WA,98039
+150,King,Seattle,WA,98134
+151,King,Seattle,WA,98108
+152,King,Seattle,WA,98102
+153,King,Seattle,WA,98115
+154,Stevens,Colville,WA,99114
+155,Cowlitz,Castle Rock,WA,98611
+156,Kitsap,Bremerton,WA,98337
+157,King,Auburn,WA,98001
+158,King,Seattle,WA,98107
+159,King,Kent,WA,98032
+160,King,Beaux Arts,WA,98004
+161,Kitsap,Olalla,WA,98359
+162,Island,Camano Island,WA,98282
+163,Clallam,Sequim,WA,98382
+164,Cowlitz,Kalama,WA,98625
+165,Snohomish,Lake Stevens,WA,98258
+166,Thurston,Rainier,WA,98576
+167,Jefferson,Port Ludlow,WA,98365
+168,Cowlitz,Silverlake,WA,98645
+169,King,Normandy Park,WA,98166
+170,Thurston,Rochester,WA,98579
+171,Thurston,Lacey,WA,98503
+172,Jefferson,Port Hadlock,WA,98339
+173,Yakima,Grandview,WA,98930
+174,King,Clyde Hill,WA,98004
+175,King,Mercer Island,WA,98040
+176,King,Pacific,WA,98047
+177,King,Algona,WA,98001
+178,Kitsap,Indianola,WA,98342
+179,King,Normandy Park,WA,98148
+180,Jefferson,Nordland,WA,98358
+181,Jefferson,Quilcene,WA,98376
+182,King,Maple Valley,WA,98038
+183,Clark,Vancouver,WA,98663
+184,Jefferson,Brinnon,WA,98320
+185,Clark,Vancouver,WA,98661
+186,King,Seatac,WA,98168
+187,Yakima,Sunnyside,WA,98944
+188,Clark,Woodland,WA,98674
+189,Clallam,Port Angeles,WA,98362
+190,Thurston,Tumwater,WA,98501
+191,Jefferson,Sequim,WA,98382
+192,Snohomish,Sultan,WA,98294
+193,Yakima,Mabton,WA,98935
+194,Clallam,Port Angeles,WA,98363
+195,Clark,Amboy,WA,98601
+196,Klickitat,White Salmon,WA,98672
+197,Island,Freeland,WA,98249
+198,Cowlitz,Ariel,WA,98603
+199,Thurston,Bucoda,WA,98530
+200,Yakima,Naches,WA,98937
+201,Yakima,Zillah,WA,98953
+202,King,Skykomish,WA,98288
+203,Jefferson,Chimacum,WA,98325
+204,Yakima,Granger,WA,98932
+205,Snohomish,Woodway,WA,98020
+206,Yakima,Cowiche,WA,98923
+207,Yakima,Toppenish,WA,98948
+208,Snohomish,Granite Falls,WA,98252
+209,King,Seatac,WA,98148
+210,Snohomish,Tulalip,WA,98271
+211,Thurston,Centralia,WA,98531
+212,Yakima,Wapato,WA,98951
+213,Clark,Yacolt,WA,98675
+214,Snohomish,Darrington,WA,98241
+215,Snohomish,Bothell,WA,98011
+216,King,Sammamish,WA,98029
+217,Kitsap,Indianola,WA,98370
+218,King,Yarrow Point,WA,98004
+219,King,Seattle,WA,98118
+220,Kitsap,Suquamish,WA,98392
+221,King,Snoqualmie,WA,98065
+222,Snohomish,Brier,WA,98036
+223,King,Hunts Point,WA,98004
+224,King,Federal Way,WA,98001
+225,Skagit,La Conner,WA,98257
+226,King,Black Diamond,WA,98010
+227,King,Milton,WA,98354
+228,Klickitat,Goldendale,WA,98620
+229,King,Carnation,WA,98014
+230,King,Seattle,WA,98155
+231,Cowlitz,Toutle,WA,98649
+232,King,Normandy Park,WA,98198
+233,Snohomish,Marysville,WA,98270
+234,King,Sammamish,WA,98053
+235,Yakima,Union Gap,WA,98903
+236,Jefferson,Forks,WA,98331
+237,Stevens,Springdale,WA,99173
+238,Snohomish,Woodinville,WA,98072
+239,Clallam,Forks,WA,98331
+240,Yakima,Outlook,WA,98938
+241,Kitsap,Hansville,WA,98340
+242,Yakima,Tieton,WA,98947
+243,King,Seattle,WA,98166
+244,Kitsap,Poulsbo,WA,98392
+245,Snohomish,Gold Bar,WA,98251
+246,King,Tukwila,WA,98032
+247,King,Seattle,WA,98136
+248,Kitsap,Kingston,WA,98370
+249,Thurston,Lacey,WA,98513
+250,Klickitat,Bingen,WA,98605
+251,Stevens,Chewelah,WA,99109
+252,Kitsap,Gig Harbor,WA,98329
+253,Kitsap,Bremerton,WA,98370
+254,Snohomish,Bothell,WA,98036
+255,King,Des Moines,WA,98032
+256,Island,Clinton,WA,98236
+257,Pierce,South Hill,WA,98373
+258,Pierce,Puyallup,WA,98371
+259,Franklin,Pasco,WA,99301
+260,King,Redmond,WA,98053
+261,Pierce,Bonney Lake,WA,98391
+262,Douglas,East Wenatchee,WA,98802
+263,Whatcom,Bellingham,WA,98229
+264,Pierce,Lakewood,WA,98498
+265,Spokane,Spokane,WA,99218
+266,King,Redmond,WA,98033
+267,Mason,Grapeview,WA,98546
+268,Spokane,Spokane,WA,99203
+269,Pierce,Anderson Island,WA,98303
+270,Grays Harbor,Hoquiam,WA,98550
+271,Skagit,Burlington,WA,98233
+272,Benton,Richland,WA,99354
+273,Spokane,Spokane,WA,99201
+274,Mason,Belfair,WA,98528
+275,Pierce,Edgewood,WA,98372
+276,Pierce,Steilacoom,WA,98388
+277,Pierce,Gig Harbor,WA,98332
+278,Pierce,Tacoma,WA,98403
+279,Pierce,Tacoma,WA,98421
+280,Whatcom,Blaine,WA,98230
+281,Chelan,Wenatchee,WA,98801
+282,Spokane,Nine Mile Falls,WA,99026
+283,Pierce,Gig Harbor,WA,98329
+284,Pierce,Gig Harbor,WA,98335
+285,Spokane,Spokane Valley,WA,99206
+286,Pacific,Long Beach,WA,98631
+287,Pierce,Tacoma,WA,98406
+288,Pierce,Sumner,WA,98390
+289,Grays Harbor,Elma,WA,98541
+290,King,Vashon,WA,98070
+291,Pierce,Tacoma,WA,98445
+292,Pierce,Fircrest,WA,98466
+293,Pierce,South Hill,WA,98374
+294,Pierce,Tacoma,WA,98404
+295,Lewis,Chehalis,WA,98532
+296,Pierce,Parkland,WA,98446
+297,Lewis,Centralia,WA,98531
+298,Spokane,Medical Lake,WA,99022
+299,Kittitas,Ellensburg,WA,98926
+300,Pierce,Puyallup,WA,98374
+301,Benton,Kennewick,WA,99338
+302,Spokane,Spokane,WA,99205
+303,Benton,West Richland,WA,99353
+304,Spokane,Liberty Lake,WA,99019
+305,Walla Walla,College Place,WA,99324
+306,Benton,Richland,WA,99352
+307,Pierce,Graham,WA,98338
+308,Spokane,Spokane,WA,99224
+309,Skagit,Mount Vernon,WA,98274
+310,Pierce,Lakewood,WA,98499
+311,Pierce,Joint Base Lewis Mcchord,WA,98433
+312,Benton,Kennewick,WA,99336
+313,Skagit,Bellingham,WA,98229
+314,Spokane,Spokane,WA,99208
+315,Whatcom,Bellingham,WA,98225
+316,Spokane,Spokane Valley,WA,99216
+317,Spokane,Spokane,WA,99223
+318,Grays Harbor,Aberdeen,WA,98520
+319,Spokane,Spokane Valley,WA,99016
+320,King,Kirkland,WA,98004
+321,Pierce,Puyallup,WA,98373
+322,Skamania,Washougal,WA,98671
+323,King,Seattle,WA,98168
+324,Spokane,Cheney,WA,99004
+325,Skagit,Sedro-Woolley,WA,98284
+326,Pierce,Tacoma,WA,98405
+327,Spokane,Spokane Valley,WA,99212
+328,Pierce,Buckley,WA,98321
+329,Pierce,Tacoma,WA,98444
+330,Skamania,North Bonneville,WA,98639
+331,Grant,Moses Lake,WA,98837
+332,Grays Harbor,Grayland,WA,98547
+333,Grays Harbor,Montesano,WA,98563
+334,Spokane,Spokane,WA,99202
+335,Whitman,Palouse,WA,99161
+336,San Juan,Eastsound,WA,98245
+337,Pierce,Eatonville,WA,98328
+338,San Juan,Anacortes,WA,98221
+339,Spokane,Spokane,WA,99206
+340,Chelan,Cashmere,WA,98815
+341,Pierce,Orting,WA,98360
+342,Benton,Kennewick,WA,99337
+343,Skamania,Underwood,WA,98651
+344,Spokane,Spokane,WA,99204
+345,Lewis,Vader,WA,98593
+346,Pierce,Fox Island,WA,98333
+347,Kitsap,Silverdale,WA,98315
+348,San Juan,Friday Harbor,WA,98250
+349,Whatcom,Glacier,WA,98244
+350,Pierce,Puyallup,WA,98372
+351,Okanogan,Brewster,WA,98812
+352,Pacific,Ocean Park,WA,98640
+353,Kitsap,Bremerton,WA,98380
+354,Lewis,Packwood,WA,98361
+355,Skamania,Carson,WA,98610
+356,Lewis,Ashford,WA,98304
+357,Whitman,Tekoa,WA,99033
+358,King,Carnation,WA,98053
+359,Skagit,Bow,WA,98232
+360,Klickitat,Trout Lake,WA,98650
+361,San Juan,Lopez Island,WA,98261
+362,Kittitas,Snoqualmie Pass,WA,98068
+363,Pierce,Tacoma,WA,98408
+364,Spokane,Airway Heights,WA,99001
+365,Pierce,Roy,WA,98580
+366,Spokane,Deer Park,WA,99006
+367,Whitman,Garfield,WA,99130
+368,Grays Harbor,Oakville,WA,98568
+369,Lincoln,Davenport,WA,99122
+370,Clallam,Clallam Bay,WA,98326
+371,Stevens,Deer Park,WA,99006
+372,Kitsap,Port Orchard,WA,98329
+373,Pacific,Raymond,WA,98577
+374,King,Bothell,WA,98072
+375,Spokane,Spokane,WA,99207
+376,King,Redmond,WA,98072
+377,Whatcom,Ferndale,WA,98248
+378,King,Renton,WA,98178
+379,Grant,Ephrata,WA,98823
+380,Adams,Lind,WA,99341
+381,Benton,Prosser,WA,99350
+382,Spokane,Colbert,WA,99005
+383,Spokane,Spokane,WA,99036
+384,Benton,Benton City,WA,99320
+385,Skamania,Stevenson,WA,98648
+386,Pierce,Dupont,WA,98327
+387,Stevens,Evans,WA,99126
+388,Lewis,Morton,WA,98356
+389,Lincoln,Odessa,WA,99159
+390,San Juan,Olga,WA,98279
+391,Wahkiakum,Cathlamet,WA,98612
+392,Pierce,Tacoma,WA,98465
+393,Kittitas,Roslyn,WA,98941
+394,Kittitas,Cle Elum,WA,98922
+395,King,Fall City,WA,98024
+396,Grant,Warden,WA,98857
+397,Chelan,Chelan,WA,98816
+398,Lewis,Rochester,WA,98579
+399,Spokane,Spokane Valley,WA,99037
+400,Pierce,Spanaway,WA,98387
+401,San Juan,Shaw Island,WA,98286
+402,King,Carnation,WA,98019
+403,Mason,Union,WA,98592
+404,Skagit,Sedro Woolley,WA,98284
+405,Pierce,Milton,WA,98354
+406,King,Kirkland,WA,98011
+407,Grant,Othello,WA,99344
+408,Pacific,South Bend,WA,98586
+409,Pierce,Lakewood,WA,98439
+410,Pend Oreille,Usk,WA,99180
+411,Spokane,Greenacres,WA,99016
+412,Pierce,Lake Tapps,WA,98391
+413,King,Kirkland,WA,98052
+414,Walla Walla,Touchet,WA,99360
+415,Whatcom,Bellingham,WA,98226
+416,Whatcom,Lynden,WA,98264
+417,Spokane,Valleyford,WA,99036
+418,Pierce,Puyallup,WA,98375
+419,King,Duvall,WA,98014
+420,Pierce,Auburn,WA,98092
+421,Kitsap,Silverdale,WA,98311
+422,Whatcom,Everson,WA,98247
+423,Mason,Shelton,WA,98584
+424,Spokane,Mead,WA,99021
+425,Grays Harbor,Ocean Shores,WA,98569
+426,Pierce,Tacoma,WA,98422
+427,King,Woodinville,WA,98077
+428,Spokane,Mead,WA,99005
+429,Pierce,Tacoma,WA,98418
+430,Pierce,South Hill,WA,98375
+431,Grant,Quincy,WA,98848
+432,Lewis,Onalaska,WA,98570
+433,Spokane,Spokane,WA,99216
+434,Klickitat,Husum,WA,98672
+435,Kittitas,Ronald,WA,98940
+436,Mason,Hoodsport,WA,98548
+437,Okanogan,Oroville,WA,98844
+438,Adams,Othello,WA,99344
+439,Franklin,Othello,WA,99344
+440,Pierce,Tacoma,WA,98466
+441,Spokane,Spokane,WA,99217
+442,Pend Oreille,Ione,WA,99139
+443,Klickitat,Murdock,WA,98617
+444,Douglas,Orondo,WA,98843
+445,Lewis,Winlock,WA,98596
+446,Pierce,Pacific,WA,98047
+447,King,Bothell,WA,98028
+448,Lewis,Randle,WA,98377
+449,Whatcom,Sedro Woolley,WA,98284
+450,Pierce,Tacoma,WA,98433
+451,Chelan,Manson,WA,98831
+452,King,Woodinville,WA,98053
+453,Skagit,Clearlake,WA,98235
+454,Pierce,Lakebay,WA,98349
+455,Spokane,Veradale,WA,99037
+456,Whitman,Uniontown,WA,99113
+457,Okanogan,Twisp,WA,98856
+458,Kittitas,Kittitas,WA,98934
+459,Grant,Mattawa,WA,99349
+460,Grays Harbor,Westport,WA,98595
+461,Pierce,Tacoma,WA,98402
+462,Grays Harbor,Mccleary,WA,98557
+463,Pacific,Naselle,WA,98638
+464,Spokane,Chattaroy,WA,99003
+465,Walla Walla,Waitsburg,WA,99361
+466,King,Kent,WA,98058
+467,Mason,Elma,WA,98541
+468,Grant,Royal City,WA,99357
+469,Chelan,Peshastin,WA,98847
+470,King,Bothell,WA,98034
+471,Spokane,Spokane,WA,99212
+472,Whitman,Endicott,WA,99125
+473,King,Seattle,WA,98164
+474,Pierce,Enumclaw,WA,98022
+475,Chelan,Entiat,WA,98822
+476,Okanogan,Okanogan,WA,98840
+477,King,Tukwila,WA,98108
+478,Grays Harbor,Taholah,WA,98587
+479,Pierce,Carbonado,WA,98323
+480,Grays Harbor,Cosmopolis,WA,98537
+481,Spokane,Elk,WA,99009
+482,Spokane,Reardan,WA,99029
+483,Columbia,Dayton,WA,99328
+484,Pierce,Tacoma,WA,98446
+485,Lewis,Mossyrock,WA,98564
+486,Whatcom,Point Roberts,WA,98281
+487,Whitman,Rosalia,WA,99170
+488,Pierce,Edgewood,WA,98371
+489,Lewis,Toledo,WA,98591
+490,Skagit,Rockport,WA,98283
+491,Walla Walla,Burbank,WA,99323
+492,Spokane,Newman Lake,WA,99025
+493,King,Seattle,WA,98055
+494,Asotin,Clarkston,WA,99403
+495,Whitman,Colfax,WA,99111
+496,Klickitat,Bz Corner,WA,98672
+497,King,Kirkland,WA,98072
+498,Whatcom,Sumas,WA,98295
+499,Pierce,Kapowsin,WA,98344
+500,Lewis,Silver Creek,WA,98585
+501,Franklin,Connell,WA,99326
+502,Mason,Allyn,WA,98524
+503,Kitsap,Bremerton,WA,98314
+504,Lewis,Salkum,WA,98582
+505,Asotin,Asotin,WA,99402
+506,Klickitat,Dallesport,WA,98617
+507,Lewis,Ethel,WA,98542
+508,King,Kent,WA,98092
+509,Pacific,Seaview,WA,98644
+510,Douglas,Palisades,WA,98845
+511,Lincoln,Wilbur,WA,99185
+512,Klickitat,Snowden,WA,98672
+513,King,Maple Valley,WA,98051
+514,Skamania,White Salmon,WA,98672
+515,Adams,Ritzville,WA,99169
+516,Pierce,Tacoma,WA,98493
+517,Lewis,Mineral,WA,98355
+518,San Juan,Lopez Is,WA,98261
+519,King,Woodinville,WA,98052
+520,Pend Oreille,Elk,WA,99009
+521,Pierce,Fife,WA,98424
+522,Spokane,Rosalia,WA,99170
+523,Spokane,Cheney,WA,99022
+524,Franklin,Mesa,WA,99343
+525,Mason,Tahuya,WA,98588
+526,Pend Oreille,Newport,WA,99156
+527,Lewis,Cinebar,WA,98533
+528,Pierce,Joint Base Lewis Mcchord,WA,98438
+529,Clallam,Neah Bay,WA,98357
+530,Pacific,Ilwaco,WA,98624
+531,Thurston,Oakville,WA,98568
+532,Pierce,Tacoma,WA,98409
+533,Spokane,Mica,WA,99023
+534,King,Ravensdale,WA,98051
+535,Pierce,Vaughn,WA,98394
+536,Spokane,Spokane,WA,99005
+537,Okanogan,Tonasket,WA,98855
+538,Spokane,Veradale,WA,99016
+539,King,Issaquah,WA,98006
+540,Ferry,Republic,WA,99166
+541,Snohomish,Edmonds,WA,98087
+542,Spokane,Spangle,WA,99031
+543,King,Seattle,WA,98148
+544,Benton,Paterson,WA,99345
+545,Wahkiakum,Skamokawa,WA,98647
+546,Spokane,Chattaroy,WA,99021
+547,Grant,Soap Lake,WA,98851
+548,Benton,Grandview,WA,98930
+549,Spokane,Spokane Valley,WA,99027
+550,Okanogan,Omak,WA,98841
+551,King,Seatac,WA,98032
+552,King,Bellevue,WA,98027
+553,Wahkiakum,Rosburg,WA,98643
+554,Wahkiakum,Naselle,WA,98638
+555,Okanogan,Mazama,WA,98833
+556,San Juan,Orcas Is,WA,98245
+557,Spokane,Edwall,WA,99008
+558,Chelan,Malaga,WA,98828
+559,King,Kent,WA,98038
+560,King,Maple Valley,WA,98059
+561,Pierce,Wilkeson,WA,98396
+562,Stevens,Kettle Falls,WA,99141
+563,Whatcom,Custer,WA,98240
+564,King,Duvall,WA,98072
+565,Snohomish,Shoreline,WA,98177
+566,Pierce,University Place,WA,98466
+567,King,Black Diamond,WA,98042
+568,Pend Oreille,Cusick,WA,99119
+569,King,Renton,WA,98038
+570,Spokane,Latah,WA,99018
+571,Grays Harbor,Copalis Beach,WA,98535
+572,Spokane,Spokane,WA,99021
+573,King,Seatac,WA,98158
+574,Lewis,Curtis,WA,98538
+575,Okanogan,Methow,WA,98846
+576,Douglas,Rock Island,WA,98850
+577,Pierce,Longbranch,WA,98351
+578,Yakima,Prosser,WA,99350
+579,Pacific,Bay Center,WA,98527
+580,Whitman,Lamont,WA,99017
+581,Clallam,Beaver,WA,98305
+582,Okanogan,Riverside,WA,98849
+583,King,Maple Valley,WA,98010
+584,Whatcom,Nooksack,WA,98276
+585,Grays Harbor,Pacific Beach,WA,98571
+586,Okanogan,Malott,WA,98840
+587,King,Issaquah,WA,98059
+588,Okanogan,Methow,WA,98834
+589,Klickitat,Roosevelt,WA,99356
+590,King,Ravensdale,WA,98038
+591,Ferry,Kettle Falls,WA,99141
+592,Pierce,Tacoma,WA,98401
+593,Ferry,Inchelium,WA,99138
+594,Grays Harbor,Satsop,WA,98583
+595,Franklin,Eltopia,WA,99330
+596,Grays Harbor,Copalis Crossing,WA,98536
+597,King,Maple Valley,WA,98058
+598,Adams,Hatton,WA,99344
+599,Spokane,Deer Park,WA,99003
+600,Klickitat,Lyle,WA,98635
+601,Whatcom,Maple Falls,WA,98266
+602,Skagit,Hamilton,WA,98255
+603,Spokane,Otis Orchards,WA,99027
+604,Pacific,Nahcotta,WA,98640
+605,King,Seattle,WA,98198
+606,Lewis,Glenoma,WA,98336
+607,Yakima,White Swan,WA,98952
+608,Okanogan,Coulee Dam,WA,99116
+609,Ferry,Curlew,WA,99118
+610,Spokane,Greenacres,WA,99019
+611,Lewis,Glenoma,WA,98356
+612,Spokane,Rockford,WA,99030
+613,Stevens,Rice,WA,99167
+614,Douglas,Bridgeport Bar,WA,98812
+615,King,Issaquah,WA,98075
+616,Whitman,Uniontown,WA,99179
+617,Lincoln,Seven Bays,WA,99122
+618,Pierce,University Place,WA,98467
+619,Klickitat,Wahkiacus,WA,98670
+620,Pacific,Surfside,WA,98640
+621,Thurston,Olympia,WA,98504
+622,Stevens,Loon Lake,WA,99148
+623,Pierce,Tacoma,WA,98443
+624,King,Seattle,WA,98124
+625,King,Preston,WA,98027
+626,Grant,Coulee City,WA,99115
+627,Yakima,Moxee,WA,98901
+628,Lincoln,Lincoln,WA,99147
+629,King,Snoqualmie,WA,98024
+630,Stevens,Gifford,WA,99131
+631,King,Baring,WA,98224
+632,Whatcom,Deming,WA,98244
+633,Grays Harbor,Moclips,WA,98562
+634,Okanogan,Carlton,WA,98814
+635,Grant,Electric City,WA,99123
+636,Garfield,Pomeroy,WA,99347
+637,Klickitat,Murdock,WA,98635
+638,Skagit,Darrington,WA,98241
+639,Grays Harbor,Quinault,WA,98575
+640,Pierce,Ashford,WA,98304
+641,Pacific,South Bend,WA,98577
+642,Spokane,Waverly,WA,99039
+643,Lewis,Napavine,WA,98565
+644,Cowlitz,Cougar,WA,98616
+645,Ferry,Danville,WA,99121
+646,King,Redmond,WA,98014
+647,Lincoln,Harrington,WA,99134
+648,Kittitas,Thorp,WA,98946
+649,Whitman,St John,WA,99171
+650,Skagit,Concrete,WA,98237
+651,Lincoln,Deer Meadows,WA,99122
+652,Grant,Lakeview,WA,98851
+653,King,Redmond,WA,98074
+654,Grant,Marlin,WA,98832
+655,Lincoln,Grand Coulee,WA,99133
+656,Okanogan,Elmer City,WA,99124
+657,Lewis,Pe Ell,WA,98572
+658,Spokane,Fairchild Air Force Base,WA,99011
+659,Grant,Grand Coulee,WA,99133
+660,King,Black Diamond,WA,98092
+661,King,Snoqualmie Pass,WA,98068
+662,Island,Langley,WA,98249
+663,Lewis,Chehalis,WA,98531
+664,Lewis,Curtis,WA,98532
+665,Pacific,Frances,WA,98577
+666,Lewis,Napavine,WA,98532
+667,Stevens,Valley,WA,99181
+668,Spokane,Spangle,WA,99004
+669,King,Maple Valley,WA,98045
+670,King,Seattle,WA,98188
+671,Pacific,Oysterville,WA,98641
+672,Okanogan,Nespelem,WA,99155
+673,Spokane,Newman Lake,WA,99027
+674,Okanogan,Pateros,WA,98846
+675,Kittitas,South Cle Elum,WA,98943
+676,Stevens,Clayton,WA,99110
+677,Whatcom,Acme,WA,98220
+678,Lincoln,Reardan,WA,99029
+679,Grant,Hartline,WA,99135
+680,Douglas,Waterville,WA,98858
+681,Skagit,Lyman,WA,98263
+682,Stevens,Addy,WA,99101
+683,Wahkiakum,Grays River,WA,98621
+684,Grant,Stratford,WA,98853
+685,King,Renton,WA,98031
+686,Pacific,Menlo,WA,98577
+687,Pierce,Elbe,WA,98330
+688,Kitsap,Port Gamble,WA,98370
+689,Pacific,Lebam,WA,98577
+690,Snohomish,Stanwood,WA,98271
+691,King,Auburn,WA,98022
+692,Spokane,Colbert,WA,99208
+693,King,Snoqualmie Pass,WA,98045
+694,Pierce,Tacoma,WA,98411
+695,Spokane,Spokane,WA,99031
+696,Spokane,Cheney,WA,99224
+697,King,Preston,WA,98024
+698,Pierce,Artondale,WA,98335
+699,Pacific,Oysterville,WA,98640
+700,Douglas,Coulee City,WA,99115
+701,King,Des Moines,WA,98003
+702,King,Maple Valley,WA,98027
+703,King,Renton,WA,98042
+704,Skamania,Bingen,WA,98605
+705,Lincoln,Ford,WA,99013
+706,King,Bellevue,WA,98033
+707,King,North Bend,WA,98065
+708,Pierce,South Prairie,WA,98385
+709,Grays Harbor,Amanda Park,WA,98526
+710,King,Kent,WA,98001
+711,Benton,Rich,WA,99352
+712,Okanogan,Chelan,WA,98816
+713,Douglas,Mansfield,WA,98830
+714,Lincoln,Sprague,WA,99032
+715,Stevens,Ford,WA,99013
+716,Walla Walla,Walla Walla Co,WA,99362
+717,Snohomish,Edmonds,WA,98036
+718,Chelan,Dryden,WA,98821
+719,Stevens,Northport,WA,99157
+720,King,Pacific,WA,98001
+721,Spokane,Chattaroy,WA,99006
+722,Cowlitz,Silver Lake,WA,98645
+723,Stevens,Hunters,WA,99137
+724,San Juan,San Juan Is,WA,98250
+725,Klickitat,Alderdale,WA,99350
+726,Pacific,Seaview,WA,98631
+727,Pierce,Prairie Ridge,WA,98391
+728,Stevens,Wellpinit,WA,99040
+729,Ferry,Keller,WA,99140
+730,Spokane,Chattaroy,WA,99005
+731,Pacific,Smith Creek,WA,98577
+732,Douglas,Coulee Dam,WA,99116
+733,Stevens,Tumtum,WA,99034
+734,Kitsap,Bangor Base,WA,98315
+735,Snohomish,Index,WA,98256
+736,Okanogan,Mazama,WA,98862
+737,Snohomish,Marysville,WA,98292
+738,Clallam,Forks,WA,98305
+739,Adams,Washtucna,WA,99371
+740,Benton,Richland,WA,99338
+741,Snohomish,Index,WA,98294
+742,Lincoln,Creston,WA,99117
+743,Benton,Plymouth,WA,99346
+744,San Juan,Deer Harbor,WA,98243
+745,San Juan,Orcas,WA,98280
+746,Whitman,Lacrosse,WA,99143
+747,Spokane,Greenacres,WA,99023
+748,Whitman,Colton,WA,99113
+749,Pierce,Home,WA,98349
+750,Spokane,Spokane,WA,99004
+751,Benton,Pros,WA,99350
+752,San Juan,Orcas Is,WA,98279
+753,Lewis,Onalaska,WA,98532
+754,Kittitas,Vantage,WA,98950
+755,Snohomish,Bothell,WA,98072
+756,Spokane,Medical Lake,WA,99004
+757,Spokane,Spokane Valley,WA,99223
+758,Snohomish,Alderwood Manor,WA,98036
+759,Pierce,Tacoma,WA,98416
+760,Douglas,Grand Coulee,WA,99133
+761,Lewis,Chehalis,WA,98542
+762,Whitman,Oakesdale,WA,99158
+763,Klickitat,Centerville,WA,98613
+764,Pacific,Bay Center,WA,98586
+765,Yakima,Zillah,WA,98951
+766,Klickitat,Klickitat,WA,98635
+767,King,Auburn,WA,98042
+768,Pacific,North Cove,WA,98547
+769,Spokane,Medical Lake,WA,99224
+770,Douglas,Bridgeport,WA,98813
+771,Kitsap,Belfair,WA,98528
+772,Yakima,Naches,WA,98942
+773,Lincoln,Almira,WA,99103
+774,Spokane,Spokane,WA,99037
+775,Kittitas,Roslyn,WA,98940
+776,Pierce,Incorporated,WA,98466
+777,Pierce,Incorporated,WA,98499
+778,King,Newcastle,WA,98006
+779,King,Preston,WA,98050
+780,Franklin,Pasc,WA,99301
+781,Skagit,Marblemount,WA,98267
+782,Thurston,Lacey,WA,98506
+783,Klickitat,Roosevelt,WA,98620
+784,Snohomish,Startup,WA,98294
+785,Klickitat,White Salmon,WA,98635
+786,Klickitat,Glenwood,WA,98619
+787,San Juan,Orcas Is,WA,98243
+788,Lewis,Adna,WA,98522
+789,Yakima,Zillah,WA,98932
+790,Okanogan,Carlton,WA,98834
+791,Chelan,Leavenworth,WA,98847
+792,Klickitat,Maryhill,WA,98620
